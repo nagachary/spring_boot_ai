@@ -8,9 +8,11 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.naga.*", "com.spring.*"})
-public class AIApplication {
-    private static final Logger logger = LoggerFactory.getLogger(AIApplication.class);
+public class RagChatApplication {
+    private static final Logger logger = LoggerFactory.getLogger(RagChatApplication.class);
+
     public static void main(String[] args) {
-        SpringApplication.run(AIApplication.class, args);
+        logger.info("RagChatApplication : ");
+        SpringApplication.run(RagChatApplication.class, args);
     }
 }

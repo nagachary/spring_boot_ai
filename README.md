@@ -8,6 +8,7 @@ curl -X POST http://localhost:8086/mysbaiapp/rag/add -d "Spring Boot is a Java f
 * Query Endpoint (Chat):
 
 ```
-curl GET http://localhost:8086/mysbaiapp/rag/query?question="Tell me about AI models"
+curl -G "http://localhost:8086/mysbaiapp/rag/query" \
+     --data-urlencode "question=Tell me about AI models"
 ```
 
